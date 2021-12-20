@@ -1,0 +1,36 @@
+//friend function
+#include<iostream>
+using namespace std;
+class Test
+{
+private:
+int data1,data2;
+public:
+Test()
+{}
+Test(int a, int b)
+{
+data1= a;
+data2=b;
+}
+void display();
+friend void multiply(Test);
+};
+void Test::display()
+{
+cout<<data1<<endl;
+cout<<data2<<endl;
+}
+void multiply(Test t)
+{
+int data;
+data=t.data1 * t.data2;
+cout<<"multiplication :="<<data<<endl;
+}
+int main()
+{
+Test obj(100,200);
+obj.display();
+multiply(obj);
+return 0;
+}S

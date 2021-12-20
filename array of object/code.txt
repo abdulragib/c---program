@@ -1,0 +1,52 @@
+#include <iostream>
+using namespace std;
+
+class Car
+{
+public:
+    string company;
+    float cost;
+    int noAirBags;
+
+    void getdata() {
+        cout << "Enter car company name => ";
+        cin >> company;
+        cout << endl;
+        cout << "Enter car cost => ";
+        cin >> cost;
+        cout << endl;
+        cout << "Enter the no of airbags =>";
+        cin >> noAirBags;
+    }
+
+    void showdata() {
+        cout << "The name of the car company is " << company << endl;
+        cout << "The cost of the car is " << cost << endl;
+        cout << "No of Airbags are " << noAirBags << endl << endl;
+    }
+};
+
+int main() {
+    int no;
+    string company;
+    Car cars[no];
+    cout << "Enter the no. of cars => ";
+    cin >> no;
+    cout << endl;
+    for (int i = 0; i < no; i++)
+    {
+        cars[i].getdata();
+    }
+
+    cout << "Enter the name of car company to be searched => ";
+    cin >> company;
+    for (int i = 0; i < no; i++)
+    {
+        if (cars[i].company == company)
+        {
+            cars[i].showdata();
+        }
+    }
+
+    return 0;
+}

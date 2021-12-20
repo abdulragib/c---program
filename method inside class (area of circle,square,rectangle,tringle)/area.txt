@@ -1,0 +1,65 @@
+#include<iostream>
+using namespace std;
+class Employee
+{
+public:
+    int l;
+    int b;
+
+
+    void rectangle(int x,int y)
+    {
+        l=x;
+        b=y;
+        int area=l*b;
+        cout<<"Area of rectangle = "<<area<<endl;
+
+    }
+
+      void triangle(int x,int y)
+    {
+        l=x;
+        b=y;
+        int area=0.5*l*b;
+        cout<<"Area of Triangle = "<<area<<endl;
+
+    }
+
+     void square(int x,int y)
+    {
+        l=x;
+        b=y;
+        int area=l*b;
+        cout<<"Area of Square = "<<area<<endl;
+
+    }
+
+    void circle(int x)
+    {
+        l=x;
+
+        int area=3.14*l*l;
+        cout<<"Area of circle = "<<area<<endl;
+
+    }
+
+};
+int main()
+{
+
+    int p,q;
+    cout<<"Enter two Number : ";
+    cin>>p>>q;
+  Employee s1;
+  s1.rectangle(p,q);
+  s1.triangle(p,q);
+  s1.square(p,q);
+  s1.circle(p);
+
+
+
+
+
+
+
+}

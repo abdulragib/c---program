@@ -1,0 +1,30 @@
+//abstraction
+#include<iostream>
+using namespace std;
+class Addition
+{
+int total;
+public:
+    Addition(int i =0)
+    {
+    total=i;
+    }
+        void set(int number)
+        {
+        total +=number;
+        }
+            int get()
+            {
+            return total;
+            }
+};
+
+int main()
+{
+Addition a1;
+a1.set(50);
+a1.set(500);
+
+cout<<a1.get()<<endl;
+return 0;
+}

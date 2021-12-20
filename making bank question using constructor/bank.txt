@@ -1,0 +1,64 @@
+#include<iostream>
+#include<string>
+using namespace std;
+class bank
+{
+
+public:
+int acc_no;
+string name;
+int amount;
+int deposit;
+int withdraw;
+int total_balance;
+int g,f;
+
+bank (int a, string b, int c,int d,int e)
+{
+
+    acc_no=a;
+    name=b;
+    amount=c;
+
+    deposit=d;
+     g=c+d;
+
+
+    withdraw=e;
+    f=g-e;
+}
+
+void display()
+{
+    cout<<"Account No : "<<acc_no<<endl;
+     cout<<"Name : "<<name<<endl;
+      cout<<"Total Amount : "<<amount<<endl;
+       cout<<"Deposit amount : "<<deposit<<endl;
+        cout<<"Total amount after deposit : "<<g<<endl;
+         cout<<"Withdraw Amount : "<<withdraw<<endl;
+         cout<<"Amount After withdraw : "<<f<<endl;
+
+}
+
+};
+int main()
+{
+    long long int x,y,z,t;
+    string s;
+    cout<<"Account Number : ";
+    cin>>z;
+    cout<<"Enter Account holder name : ";
+    cin>>s;
+    cout<<"Total Amount : ";
+    cin>>t;
+    cout<<"Enter deposit amount : ";
+    cin>>x;
+    cout<<"Enter withdraw amount : ";
+    cin>>y;
+    cout<<endl;
+    bank s1=bank(z,s,t,x,y);
+
+    s1.display();
+
+return 0;
+}

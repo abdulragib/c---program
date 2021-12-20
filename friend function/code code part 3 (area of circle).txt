@@ -1,0 +1,31 @@
+//friend function
+#include<iostream>
+using namespace std;
+class Demo
+{
+private:
+int r;
+friend int area(Demo);
+
+public:
+    void get(int r)
+    {
+        this->r=r;
+    }
+};
+
+int area(Demo d)
+{
+//access private member from fried function
+d.r=3.14*d.r*d.r;
+return d.r;
+}
+
+int main()
+{
+Demo d1;
+d1.get(5);
+cout<<"Area of Circle : "<<area(d1)<<endl;
+return 0;
+}
+

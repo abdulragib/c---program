@@ -1,0 +1,108 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+
+    string str="Prep";
+    string str1="Besytes";
+    string str2="hi";
+    string str3;
+
+
+
+    cout<<"first occourance of es= "<<str1.find("es")<<endl;
+    cout<<"last occourance of es= "<<str1.rfind("es")<<endl;
+    cout<<"use of Find_first_of function = "<<str1.find_first_of("es")<<endl;
+
+    cout<<"use of insert function = ";
+    str1.insert(3,"prep");
+    cout<<str1<<endl;
+
+    str1.clear();
+    cout<<"using empty function to check string is empty or not = ";
+    if(str1.empty())
+
+      cout<<"empty"<<endl;
+      else
+        cout<<"not empty"<<endl;
+
+
+
+
+
+    string::iterator sit;
+
+    cout<<"using begin() and end() function to iterate = ";
+    for(sit=str.begin();sit!=str.end();sit++)
+    {
+
+        cout<<*sit;
+    }
+    cout<<endl;
+
+
+
+     string::reverse_iterator rsit;
+
+    cout<<"using begin() and end() function to iterate = ";
+    for(rsit=str.rbegin();rsit!=str.rend();rsit++)
+    {
+
+        cout<<*rsit;
+    }
+    cout<<endl;
+
+
+    char ch[7];
+    cout<<"str= "<<str<<endl;
+    str.copy(ch,3,1);
+    cout<<"ch= "<<ch<<endl;
+
+
+   str1.swap(str);
+   cout<<"str1 after swap= "<<str1<<endl;
+   cout<<"str after swap= "<<str<<endl;
+
+
+
+
+
+
+    str3=str;
+    cout<<str3<<endl;
+
+   str=str+str1;
+   cout<<str<<endl;
+
+
+   cout<<str[1]<<endl;
+
+
+   if(str>str1)
+    cout<<"true"<<endl;
+   else
+    cout<<"False"<<endl;
+
+
+
+
+
+   if(str==str1+str2)
+    {
+        cout<<"true"<<endl;
+    }
+    else
+    {
+
+        cout<<"false"<<endl;
+    }
+
+    if(str>str2)
+    {
+
+        cout<<"str>str1"<<endl;
+    }
+
+}
+
+

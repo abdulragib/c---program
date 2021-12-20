@@ -1,0 +1,14 @@
+#include <iostream>
+char a = 'p';
+static int b = 60;
+
+int main()
+{
+char a = 'z';
+
+std::cout << "The static variable : "<< ::b;
+std::cout << "\nThe local variable : " << a;
+std::cout << "\nThe global variable : " << ::a;
+
+return 0;
+}

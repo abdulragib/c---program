@@ -1,0 +1,40 @@
+#include <iostream>
+using namespace std;
+
+class test
+{
+    public:
+    int code;
+    static int countno;   //static member variable
+
+    void setcode (void)
+    {
+    code = countno++;
+    }
+
+    void showcode()
+    {
+        cout<<"Before post increment : "<<code<<endl;
+    }
+
+    static  void showcount(void)    //static member function
+    {
+    cout <<"After post increment : " << countno <<" \n ";
+    }
+
+  };
+
+  int test :: countno=0;
+  int main()
+  {
+
+      test t1,t2;
+
+      t1. setcode();
+      t1.showcode();
+       t1.showcount();   //accessing static function
+
+
+
+     return 0;
+  }

@@ -1,0 +1,29 @@
+//making outside function inline
+#include<iostream>
+using namespace std;
+
+class Demo
+{
+public:
+int value;
+void get(int v);
+void set();
+};
+
+inline void Demo::get(int v)
+{
+value=v;
+}
+
+inline void Demo::set()
+{
+cout<<"value of number is:"<<value<<endl;
+}
+
+int main()
+{
+Demo d1;
+d1.get(50);
+d1.set();
+return 0;
+}

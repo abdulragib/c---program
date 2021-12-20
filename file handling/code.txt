@@ -1,0 +1,16 @@
+#include<iostream>
+#include<fstream>
+using namespace std;
+int main()
+{
+ofstream filestream("prakash.txt");
+if(filestream.is_open())
+{
+filestream<<"welcome to my page";
+filestream<<"this is demo file";
+filestream.close();
+}
+else
+cout<<"File opening is fail";
+return 0;
+}

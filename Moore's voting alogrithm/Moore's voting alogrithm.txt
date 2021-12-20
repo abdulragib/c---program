@@ -1,0 +1,39 @@
+//Program of Moore's voting algorithm
+#include<iostream>
+using namespace std;
+int main()
+{
+    int x[8]={7,2,7,3,7,2,7,7};
+    int n=sizeof(x[8])/sizeof(x[0]);
+    int major=0, cnt=1;
+    int i;
+    for(i=0;i<n;i++)
+    {
+        if(x[major]==x[i])
+        {
+            cnt++;
+        }
+        else
+        {
+            cnt--;
+        }
+        if(cnt==0)
+        {
+            major=i;
+            cnt=1;
+        }
+
+        if(major>n/2)
+        {
+
+            cout<<"Majority Element"<<endl;
+        }
+        else
+        {
+            cout<<"No Majority Element"<<endl;
+        }
+
+    }
+
+
+}

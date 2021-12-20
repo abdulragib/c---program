@@ -1,0 +1,35 @@
+#include<iostream>
+using namespace std;
+
+class lpu
+{
+    string ums;
+    string live;
+    string myclass;
+
+public:
+  void get(string ums,string live,string myclass);
+    friend void set(lpu l);
+};
+
+void lpu :: get(string ums, string live, string myclass)
+{
+    this->ums=ums;
+    this->live=live;
+    this->myclass=myclass;
+}
+
+ void set(lpu l)
+{
+    cout<<"Data of Lpu :- "<<l.ums<<endl;
+    cout<<"Data of Lpu :- "<<l.live<<endl;
+    cout<<"Data of Lpu :- "<<l.myclass<<endl;
+}
+
+int main()
+{
+   lpu l1;
+   l1.get("student interface","chatting","attending class");
+   set(l1);
+    return 0;
+}

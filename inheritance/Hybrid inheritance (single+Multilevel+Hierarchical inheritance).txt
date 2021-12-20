@@ -1,0 +1,65 @@
+#include <iostream>
+using namespace std;
+class Flipcart
+{
+
+public:
+int id=1234;
+};
+
+class Grocery : public Flipcart
+{
+public:
+int price=20000;
+};
+
+class food : public Grocery
+{
+public:
+string food="biryani";
+};
+
+class Electronics : public Flipcart
+{
+public:
+    string name="Mobile";
+};
+
+class Sweets : public Flipcart
+{
+public:
+    string name="Gulab jamun";
+};
+
+class rosogulla : public Sweets
+{
+public:
+    int price=100;
+};
+
+int main()
+{
+
+Grocery g1;
+food f1;
+cout<<"id :- "<<g1.id<<endl;
+cout<<"price :- "<<f1.price<<endl;
+cout<<"food :- "<<f1.food<<endl;
+cout<<endl;
+
+Electronics e1;
+cout<<"Price :-"<<e1.id<<endl;
+cout<<endl;
+
+Sweets s1;
+cout<<"Price :-"<<s1.id<<endl;
+cout<<"Name :-"<<s1.name<<endl;
+cout<<"Sweets_Name :-"<<s1.name<<endl;
+cout<<endl;
+
+rosogulla r1;
+cout<<"Rosogulla_id :-"<<r1.id<<endl;
+cout<<"Rosogulla_price :-"<<r1.price<<endl;
+
+return 0;
+}

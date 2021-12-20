@@ -1,0 +1,36 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int mcq,midterm,endterm;
+    cout<<"Enter Mcq,Midterm,Endterm scores : ";
+    cin>>mcq>>midterm>>endterm;
+    cout<<endl;
+    int total=(mcq+midterm+endterm)/3;
+    cout<<"Average of Mcq,Midterm,Endterm : "<<total<<endl<<endl;
+
+    if(total>=90)
+    {
+        cout<<"Grade : "<<"A"<<endl;
+    }
+
+    else if(total>=70&&total<90)
+    {
+        cout<<"Grade : "<<"B"<<endl;
+    }
+
+    else if(total>=50&&total<70)
+    {
+        cout<<"Grade : "<<"C"<<endl;
+    }
+
+    else
+    {
+        if(total<50)
+        {
+
+            cout<<"Grade : "<<"F"<<endl;
+        }
+    }
+return 0;
+}

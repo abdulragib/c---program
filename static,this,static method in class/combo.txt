@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+
+class hello
+{
+public:
+static int age;
+
+void data(int age)
+{
+this->age=age;
+}
+
+static void printMsg()
+{
+
+cout<<age<<endl;
+
+}
+};
+
+int hello::age=5;
+
+int main()
+{
+
+static hello s1;
+s1.data(10);
+hello::printMsg();
+return 0;
+}
+

@@ -1,0 +1,31 @@
+//return object from a function
+#include<iostream>
+using namespace std;
+class Student
+{
+public:
+int id;
+int age;
+string name;
+Student data(int i,int a,string n)
+{
+Student s;
+s.id=i;
+s.age=a;
+s.name=n;
+return s;
+}
+void show(Student s)
+{
+cout<<"ID of student:"<<s.id<<endl;
+cout<<"Age of student:"<<s.age<<endl;
+cout<<"Name of student:"<<s.name<<endl;
+}
+};
+int main()
+{
+Student s1;
+s1=s1.data(79,20,"George");
+s1.show(s1);
+return 0;
+}

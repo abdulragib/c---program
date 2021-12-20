@@ -1,0 +1,44 @@
+#include<iostream>
+using namespace std;
+class Employee
+{
+public:
+    string Name;
+    int id;
+    string address;
+    int contact;
+    int salary;
+
+};
+int main()
+{
+   Employee s1;
+   s1.Name="Abdul Ragib";
+   s1.id=7893;
+   s1.address="bihar";
+   s1.contact=700000789;
+   s1.salary=30000;
+
+   Employee s2;
+   s2.Name="Vivek Jaiswal";
+   s2.id=6789;
+   s2.address="Bihar";
+   s2.contact=700000789;
+   s2.salary=30000;
+
+
+   cout<<"Name ="<<s1.Name<<endl;
+   cout<<"id ="<<s1.id<<endl;
+   cout<<"Address ="<<s1.address<<endl;
+   cout<<"contact ="<<s1.contact<<endl;
+   cout<<"salary ="<<s1.salary<<endl;
+   cout<<endl;
+
+   cout<<"Name ="<<s2.Name<<endl;
+   cout<<"id ="<<s2.id<<endl;
+   cout<<"Address ="<<s2.address<<endl;
+   cout<<"contact ="<<s2.contact<<endl;
+   cout<<"salary ="<<s2.salary<<endl;
+
+
+}

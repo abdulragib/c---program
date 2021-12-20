@@ -1,0 +1,26 @@
+#include<iostream>
+using namespace std;
+
+class Test
+{
+public:
+    int a;
+
+    inline int getdata (int x);
+
+};
+
+int Test :: getdata(int x)
+{
+
+      a=x;
+      cout<<" A :- "<<a<<endl;
+      return 0;
+};
+
+int main()
+{
+    Test t1;
+    t1.getdata(10);
+    return 0;
+}

@@ -1,0 +1,29 @@
+//writing to a file
+#include<iostream>
+#include<fstream>
+using namespace std;
+int main()
+{
+char data[100];
+ofstream of;
+of.open("program.txt");
+cout<<"writing to a file"<<endl;
+cout<<"Enter your name";
+cin.getline(data,100);
+of<<data<<endl;
+cout<<"enter your id";
+cin>>data;
+of<<data<<endl;
+of.close();
+
+ifstream ifs;
+string str;
+ifs.open("program.txt");
+cout<<"reading from a file"<<endl;
+while(getline(ifs,str))
+{
+cout<<str<<endl;
+}
+ifs.close();
+return 0;
+}

@@ -1,0 +1,59 @@
+#include <iostream>
+using namespace std;
+
+class Marks
+{
+public:
+    string name="Abdul Ragib";
+    int registration=12000003;
+    int Math;
+    int Physics;
+    int Biology;
+    int Chemistry;
+    int English;
+    int total;
+
+    void subjectmarks (int Math,int Physics,int Biology,int Chemistry,int English);
+
+    void showmarks();
+
+};
+
+inline void Marks :: subjectmarks (int Math,int Physics,int Biology,int Chemistry,int English)
+    {
+        this->Math=Math;
+        this->Physics=Physics;
+        this->Biology=Biology;
+        this->Chemistry=Chemistry;
+        this->English=English;
+    }
+
+
+ inline void Marks :: showmarks()
+    {
+
+        cout<<endl;
+        total=Math+Physics+Biology+Chemistry+English;
+        cout<<"Total Marks :- "<<total<<endl;
+        cout<<"Percentage :- "<<total/5<<endl;
+
+    }
+
+int main()
+{
+    int Math,Physics,Biology,Chemistry,English;
+    cout<<"Math :- ";
+    cin>>Math;
+    cout<<"Physics :-";
+    cin>>Physics;
+    cout<<"Biology :- ";
+    cin>>Biology;
+    cout<<"Chemistry :- ";
+    cin>>Chemistry;
+    cout<<"English :- ";
+    cin>>English;
+    Marks m1;
+    m1.subjectmarks(Math,Physics,Biology,Chemistry,English);
+    m1.showmarks();
+    return 0;
+}

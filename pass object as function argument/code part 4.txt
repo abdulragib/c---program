@@ -1,0 +1,33 @@
+#include <iostream>
+using namespace std;
+
+class Student {
+
+ public:
+     int marks;
+
+     Student( int x)//constructor
+     {
+         marks=x;
+     }
+
+     void averagemarks(Student s1, Student s2)
+     {
+         int average=(s1.marks+s2.marks)/2;
+         cout<<"Average :- "<<average<<endl;
+    }
+
+};
+
+
+
+
+int main()
+{
+    Student student1(60),student2 (80);
+
+     student1.averagemarks(student1,student2);
+
+
+    return 0;
+}

@@ -1,0 +1,47 @@
+Program of finding majority element of array.
+#includeiostream
+using namespace std;
+int main()
+{
+
+    int x[8]={7,2,7,3,7,2,7,7};
+    int n=sizeof(x[8])sizeof(x[0]);
+    int y=2,z=3,p=7;
+    int count1=0,count2=0,count3=0;
+    for(int i=0;in;i++)
+    {
+        if(y==x[i])
+        {
+            count1++;
+        }
+
+        if(z==x[i])
+        {
+            count2++;
+        }
+
+        if(p==x[i])
+        {
+            count3++;
+        }
+
+        if(n2count1&&count1count2&&count1count3)
+        {
+            cout2= Majority Eelementendl;
+        }
+
+        if(n2count2&&count2count1&&count2count3)
+        {
+            cout3= Majority Eelementendl;
+        }
+
+        if(n2count3&&count3count1&&count3count2)
+        {
+            cout7= Majority Eelementendl;
+
+        }
+
+    }
+
+return 0;
+}

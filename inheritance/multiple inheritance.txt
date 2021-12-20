@@ -1,0 +1,29 @@
+#include<iostream>
+using namespace std;
+
+class Ebay
+{
+public:
+    string services="Shopping";
+};
+
+class Shoes
+{
+public:
+    string Brand="Campus";
+};
+
+class Sportshoes : public Ebay, public Shoes
+{
+    public:
+    string color="black&green";
+};
+
+int main()
+{
+    Sportshoes s1;
+    cout<<"Services :-"<<s1.services<<endl;
+    cout<<"Brand :-"<<s1.Brand<<endl;
+    cout<<"Color :-"<<s1.color<<endl;
+    return 0;
+}

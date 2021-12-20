@@ -1,0 +1,27 @@
+#include<iostream>
+using namespace std;
+class Employee
+{
+public:
+
+Employee()
+{
+    cout<<"hello";
+}
+
+
+
+};
+int main()
+{
+
+    Employee s1;
+
+return 0;
+
+
+
+
+
+
+}

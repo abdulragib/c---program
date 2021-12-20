@@ -1,0 +1,25 @@
+#include<iostream>
+using namespace std;
+struct Rectangle
+{
+int width,height;
+
+Rectangle (int width,int height)
+{
+    this->width=width;
+    this->height=height;
+}
+
+void show ()
+{
+    cout<<"Area of Rectangle : "<<(width*height)<<endl;
+}
+};
+
+int main()
+{
+struct Rectangle rec=Rectangle(10,15);
+rec.show();
+
+return 0;
+}

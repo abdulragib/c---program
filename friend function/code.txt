@@ -1,0 +1,22 @@
+//friend function
+#include<iostream>
+using namespace std;
+class Demo
+{
+private:
+int meter;
+friend int add(Demo);
+};
+int add(Demo d)
+{
+//access private member from fried function
+d.meter+=10;
+return d.meter;
+}
+int main()
+{
+Demo d1;
+cout<<"Distance:"<<add(d1)<<endl;
+return 0;
+}
+

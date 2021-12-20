@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+enum person
+{
+    East=1,West=2,North=3,South=4
+
+};
+
+int main()
+{
+    person p;
+    p=East;
+    std::cout<<"East : "<<p<<endl;
+
+    person q;
+    q=West;
+    std::cout<<"West : "<<q<<endl;
+
+    person r;
+    r=North;
+    std::cout<<"North : "<<r<<endl;
+
+    person s;
+    s=South;
+    std::cout<<"South : "<<s<<endl;
+
+
+    return 0;
+}

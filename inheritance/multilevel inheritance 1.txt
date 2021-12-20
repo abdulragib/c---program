@@ -1,0 +1,51 @@
+#include <iostream>
+using namespace std;
+
+class Grandfather
+{
+    public:
+    string Business_name="tata motars";
+    int Business_method()
+    {
+
+        cout<<"Business_method :-"<<"steal and iron equipments"<<endl;
+        return 0;
+    };
+};
+
+
+class father : public Grandfather
+{
+public:
+    int Employees()
+    {
+        cout<<"Employees :-"<<"devloping cars equipments"<<endl;
+        return 0;
+    };
+
+    string Branches="chennai,Mumbai,Dehli,Hydrabad,Bangalore";
+};
+
+
+class son : public father
+{
+    public:
+    string Business_name="star motars";
+};
+
+int main()
+{
+    father f1;
+    cout<<"Business_Name :- "<<f1.Business_name<<endl;
+    cout<<"Business_method :- "<<f1.Business_method()<<endl;
+
+    son s1;
+    cout<<"Employee :-"<<s1.Employees()<<endl;
+    cout<<"Branch :-"<<s1.Branches<<endl;
+    cout<<"Business_name"<<s1.Business_name<<endl;
+
+
+
+
+    return 0;
+}

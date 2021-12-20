@@ -1,0 +1,28 @@
+#include<iostream>
+using namespace std;
+class Student
+{
+int age;
+string name;
+public:
+Student(int a, string n)//parameterized cons
+{
+age = a;
+name= n;
+}
+void display()
+{
+cout<<age<<" "<<name<<endl;
+}
+};
+int main()
+{
+Student s1=Student(20,"happy");
+Student s2=Student(18,"John");
+Student s3=Student(21,"serra");
+s1.display();
+s2.display();
+s3.display();
+
+return 0;
+}

@@ -1,0 +1,100 @@
+#include<iostream>
+using namespace std;
+class company
+{
+public:
+    string mobile;
+    string tablet;
+    string watch;
+    string shoes;
+    string camera;
+    string goggle;
+    string laptop;
+    string selfistick;
+    string mobilecharger;
+    string headphone;
+
+
+
+   int productlist(string mobile,string tablet,string watch,string shoes,string camera, string goggle, string laptop,
+    string selfistick, string mobilecharger,string headphone)
+    {
+
+
+       this->mobile=mobile;
+    this->tablet=tablet;
+    this->camera=camera;
+   this->headphone=headphone;
+    this->laptop=laptop;
+
+
+
+
+       this->watch=watch;
+    this->shoes=shoes;
+     this->selfistick=selfistick;
+    this->mobilecharger=mobilecharger;
+     this->goggle=goggle;
+
+
+
+    };
+
+    void show()
+    {
+        cout<<"Mobile Name : "<<mobile<<endl;
+        cout<<"Tablet Name: "<<tablet<<endl;
+        cout<<"Watch Name : "<<watch<<endl;
+        cout<<"Shoes Name: "<<shoes<<endl;
+        cout<<"Camera Name: "<<camera<<endl;
+        cout<<"Goggle Name: "<<goggle<<endl;
+        cout<<"Laptop Name: "<<laptop<<endl;
+        cout<<"Selfistick Name: "<<selfistick<<endl;
+        cout<<"Mobilecharger Name: "<<mobilecharger<<endl;
+        cout<<"Headphone Name: "<<headphone<<endl;
+
+    }
+};
+
+int main()
+{
+    string mobile,tablet,camera,headphone,laptop,watch,shoes,selfistick,mobilecharger,goggle;
+
+    cout<<"Enter Mobile Name : ";
+    getline(cin,mobile);
+
+    cout<<"Enter Tablet Name : ";
+    getline(cin,tablet);
+
+    cout<<"Enter Camera Name : ";
+    getline(cin,camera);
+
+    cout<<"Enter Headphone Name : ";
+    getline(cin,headphone);
+
+    cout<<"Enter laptop Name : ";
+    getline(cin,laptop);
+
+    cout<<"Enter watch Name : ";
+    getline(cin,watch);
+
+    cout<<"Enter Shoes Name : ";
+    getline(cin,shoes);
+
+    cout<<"Enter Selfistick Name : ";
+    getline(cin,selfistick);
+
+    cout<<"Enter Mobilecharger Name : ";
+    getline(cin,mobilecharger);
+
+    cout<<"Enter Goggle Name : ";
+    getline(cin,goggle);
+
+    company c1;
+    c1.productlist(mobile,tablet,watch,shoes,camera,goggle,laptop,
+    selfistick,mobilecharger,headphone);
+    cout<<endl;
+    c1.show();
+
+    return 0;
+}

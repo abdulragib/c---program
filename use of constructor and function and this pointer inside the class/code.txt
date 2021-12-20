@@ -1,0 +1,44 @@
+#include <iostream>
+using namespace std;
+
+class family
+{
+public:
+  string name;
+  int age;
+  string job;
+  static string address;
+
+  family(string name,int age, string job)
+  {
+      this->name=name;
+      this->age=age;
+      this->job=job;
+  };
+
+  void view()
+  {
+      cout<<"Name : "<<name<<endl;
+       cout<<"Age : "<<age<<endl;
+        cout<<"Job : "<<job<<endl;
+         cout<<"Job : "<<address<<endl;
+
+  }
+
+};
+
+string family:: address="Purani_Habeli";
+
+int main()
+ {
+family f1=family("Abdul Ragib",20,"Hacker");
+f1.view();
+cout<<endl;
+family f2=family("Vivek jaiswal",23,"Hacker");
+f2.view();
+cout<<endl;
+family f3=family("Surbhi Rai",20,"Data Scientist");
+f3.view();
+
+return 0;
+}

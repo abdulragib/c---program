@@ -1,0 +1,43 @@
+//abstraction
+#include<iostream>
+using namespace std;
+class Address
+{
+public:
+string streetno,city,state;
+    Address(string streetno,string city, string state)
+    {
+    this->streetno=streetno;
+    this->city=city;
+    this->state=state;
+    }
+
+};
+class Employee
+{
+Address* address;
+public:
+int id,salary;
+string name;
+
+    Employee(int id, int salary, string name,Address* address)
+    {
+    this->id=id;
+    this->salary=salary;
+    this->name=name;
+    this->address=address;
+    }
+
+void display()
+{
+cout<<id<<" "<<" "<<name<<" "<<salary<<" "<<address->streetno<<" "<<address->city<<" "<<address->state<<endl;
+}
+};
+
+int main()
+{
+Address a1 = Address("100","Ludhiana","Punjab");
+Employee e1 = Employee(11,80000,"George",&a1);
+e1.display();
+return 0;
+}

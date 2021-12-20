@@ -1,0 +1,51 @@
+#include <iostream>
+using namespace std;
+
+struct Person
+{
+  string name;
+  int age;
+  string citizenship;
+  static string address;
+
+  Person(string name,int age, string citizenship)
+  {
+      this->name=name;
+      this->age=age;
+      this->citizenship=citizenship;
+  };
+
+  void view()
+  {
+      cout<<"Name : "<<name<<endl;
+       cout<<"Age : "<<age<<endl;
+        cout<<"Job : "<<citizenship<<endl;
+         cout<<"Job : "<<address<<endl;
+
+  }
+
+};
+
+string Person:: address="Purani_Habeli";
+
+int main()
+ {
+
+struct Person f1=Person("Abdul Ragib",20,"INDIAN");
+f1.view();
+cout<<endl;
+
+
+struct Person f2=Person("Vivek jaiswal",23,"INDIAN");
+f2.view();
+cout<<endl;
+
+
+struct Person f3=Person("Surbhi Rai",20,"INDIAN");
+f3.view();
+cout<<endl;
+struct Person f4=Person("Mohit Rana",23,"INDIAN");
+f3.view();
+
+return 0;
+}
